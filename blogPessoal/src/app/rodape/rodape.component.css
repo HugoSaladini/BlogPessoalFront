@@ -10,8 +10,20 @@ ul.social-network li{
 }
 
 .fa{
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     padding: 10px;
 
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #910a85;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
 }
