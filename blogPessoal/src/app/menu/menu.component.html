@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex align-items-center">
           <li class="nav-item">
-            <img src="https://lh3.googleusercontent.com/ogw/ADGmqu-lwkk3tCqOMHKsGxgBmfhquN2hgJPlW7SvCdK6wg=s83-c-mo" alt="" width="50px" height="50px" class="img-fluid rounded-circle">
+            <img src="{{foto}}" alt="" width="50px" height="50px" class="img-fluid rounded-circle">
           </li>
           <li class="nav-item pl-3">
-            <p class="m-0 fw-bold text-white fs-16">User name</p>
+            <p class="m-0 fw-bold text-white fs-16">Olá, {{nome}}</p>
           </li>   
 
           <li class="nav-item pl-3 ">
@@ -26,7 +26,7 @@
 
         <ul class="navbar-nav ml-auto d-flex align-items-center">
             <li class="nav-item pl-3">
-                <a class="m-0 fw-bold text-white fs-16"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a (click)='sair()' class="m-0 fw-bold text-white fs-16"> <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </a>
               </li>
 

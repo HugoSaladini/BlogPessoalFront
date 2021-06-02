@@ -1,6 +1,7 @@
 import { HttpClientModule} from  '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common'
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,11 +28,13 @@ import { FormsModule, NgModel } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    
+    FormsModule 
     
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
