@@ -13,6 +13,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { from } from 'rxjs';
 import { InicioComponent } from './inicio/inicio.component';
 import { FormsModule, NgModel } from '@angular/forms';
+import { TemaComponent } from './tema/tema.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FormsModule, NgModel } from '@angular/forms';
     RodapeComponent,
     EntrarComponent,
     CadastrarComponent,
-    InicioComponent
+    InicioComponent,
+    TemaComponent
   ],
   imports: [
     BrowserModule,
